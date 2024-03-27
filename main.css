@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1450px;
+  display: flex;
+}
+main .image {
+  width: 65%;
+  height: 1080px;
+}
+main .logo {
+  width: 105px;
+  height: 24px;
+  position: relative;
+  left: 40%;
+  top: 32px;
+}
+main .sofa {
+  width: 736px;
+  height: 1080px;
+  position: absolute;
+  z-index: -1;
+  margin-left: -100px;
+}
+main .content {
+  height: 1080px;
+  padding-block: 8rem;
+}
+main .content input {
+  display: block;
+  margin-block: 2rem;
+  height: 40px;
+  width: 20rem;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-color: rgb(232, 236, 239);
+  font-size: 16px;
+  padding-bottom: 0.7rem;
+  color: rgb(108, 114, 117);
+  font-family: "Inter", sans-serif;
+}
+main .content .checkbox {
+  width: 24px;
+  height: 24px;
+  gap: 10px;
+}
+main .content h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+main .content .content_part {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+main .content .content_part .sign_in {
+  padding-left: 5px;
+  color: rgb(56, 203, 137);
+  cursor: pointer;
+}
+main .Privacy_policy {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+main .Privacy_policy p {
+  padding-left: 6px;
+  color: rgba(96, 95, 95, 0.7);
+}
+main .Privacy_policy p span {
+  color: black;
+}
+main button {
+  width: 400px;
+  height: 48px;
+  padding: 10px 40px 10px 40px;
+  border: none;
+  border-radius: 0.5rem;
+  background: black;
+  font-family: "Inter", sans-serif;
+}
+main button a {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+main .password_eye {
+  display: flex;
+  align-items: center;
+}
+main .password_eye span {
+  cursor: pointer;
+}
+
+@media screen and (width < 1150px) {
+  main {
+    flex-direction: column;
+    margin: auto;
+  }
+  main .image {
+    margin: auto;
+  }
+}
+@media screen and (width < 1150px) and (width < 700px) {
+  main .image {
+    margin: 0;
+  }
+  main .image .logo {
+    transform: translateX(220px);
+  }
+}
+@media screen and (width < 1150px) {
+  main .container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+  }
+}
+@media screen and (width < 450px) {
+  .container_2 {
+    padding-left: 5rem;
+  }
+}/*# sourceMappingURL=main.css.map */
